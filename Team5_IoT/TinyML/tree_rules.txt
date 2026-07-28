@@ -1,0 +1,37 @@
+|--- Soil <= 24.50
+|   |--- Soil <= 23.50
+|   |   |--- Humidity <= 68.50
+|   |   |   |--- Humidity <= 54.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- Humidity >  54.50
+|   |   |   |   |--- class: 1
+|   |   |--- Humidity >  68.50
+|   |   |   |--- class: 1
+|   |--- Soil >  23.50
+|   |   |--- Humidity <= 82.50
+|   |   |   |--- class: 1
+|   |   |--- Humidity >  82.50
+|   |   |   |--- class: 0
+|--- Soil >  24.50
+|   |--- Humidity <= 49.50
+|   |   |--- Temperature <= 32.50
+|   |   |   |--- Soil <= 34.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- Soil >  34.50
+|   |   |   |   |--- class: 0
+|   |   |--- Temperature >  32.50
+|   |   |   |--- Soil <= 26.00
+|   |   |   |   |--- class: 1
+|   |   |   |--- Soil >  26.00
+|   |   |   |   |--- class: 1
+|   |--- Humidity >  49.50
+|   |   |--- Soil <= 33.50
+|   |   |   |--- Temperature <= 32.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- Temperature >  32.50
+|   |   |   |   |--- class: 1
+|   |   |--- Soil >  33.50
+|   |   |   |--- Soil <= 74.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- Soil >  74.50
+|   |   |   |   |--- class: 0
